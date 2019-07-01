@@ -1,0 +1,28 @@
+<div class="card" (keyup.esc)="clearToolTips()" tabindex="0">
+    <div class="card-header">
+        {{pageTitle}}
+    </div>
+
+    <div class="card-body">
+            <div class="row">
+                <div class="col-md-4">
+                    <button type="button" name="haveToolTip" 
+                    (click) = "passToolTipButton1()" autofocus tabindex="0">Click Me !</button>
+                    <xello-tooltip (toolTipClear)='onToolTipClear($event)' 
+                    [toolTipValid]=true 
+                    [toolTipLabel]="_toolTipLabel1"></xello-tooltip>
+                </div>
+            </div>
+            <br/>
+            <div class="row">
+                    <div class="col-md-4">
+                        <button type="button" name="haveToolTip" 
+                        (click) = "passToolTipButton2()" tabindex="1">Click Me !</button>
+                        <xello-tooltip (toolTipClear)='onToolTipClear($event)' 
+                        [toolTipValid]=true 
+                        [toolTipLabel]="_toolTipLabel2">
+                    </xello-tooltip>
+                    </div>
+            </div>
+    </div>        
+</div>   
