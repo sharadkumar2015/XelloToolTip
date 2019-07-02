@@ -1,3 +1,8 @@
+Comments: -
+I have created the ToolTip as seprate component and in current codebase excluded the node_modules forlder.
+Please run "npm install" before "npm start" before running the application.
+I have not put in place unit tests for this solution and tested the solution manually with Chrome Browser.
+
 # XelloToolTip
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.6.
